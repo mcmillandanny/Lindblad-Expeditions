@@ -1,0 +1,149 @@
+/* 
+==============================================
+CONTENT:	Lindblad
+AUTHOR:		Danny McMillan
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-home {
+	position: relative;
+	height: 100vh;
+}
+
+.content-home .video-wrap {
+	width: 100%;
+}
+
+.content-home .video-wrap .videos {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+/* 2. Content ================================= */
+.america, .asia, .south-america {
+	color: #dada00;
+	font-size: 2.5em;
+}
+
+#header .logo-right {
+	color: white;
+	font-size: 2em;
+	float: right;
+}
+
+#hamburger {
+	z-index: 1;
+	display: inline-block;
+	padding: 10px 10px 0px 10px;
+	cursor: pointer;
+}
+
+#hamburger .line-1, #hamburger .line-2, #hamburger .line-3 {
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+#hamburger .change.line-1 {
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+#hamburger .change.line-2 {
+	opacity: 0;
+}
+
+#hamburger .change.line-3 {
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#hamburger #hamburger.menu-ani {
+	transition: .7;
+}
+
+.carousel {
+	width: 220px;
+	height: 220px;
+	background: red;
+	border-radius: 150px;
+}
+
+.explore-arrow {
+	color: red;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,108 @@
+/* 
+==============================================
+CONTENT:	Lindblad
+AUTHOR:		Danny McMillan
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+$textcolor: #dada00;
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.content-home {
+	position: relative;
+	height: 100vh;
+	.video-wrap {
+		width: 100%;
+		.videos {
+			width: 100%;
+			position: absolute;
+			z-index: -1;
+		}
+	}
+}
+
+/* 2. Content ================================= */
+
+
+.america, .asia, .south-america {
+	color: $textcolor;
+	font-size: 2.5em;
+}
+
+#header {
+
+	.logo-right {
+		color: white;
+		font-size: 2em;
+		float: right;
+	}
+}
+
+#hamburger {
+	z-index: 1;
+	display: inline-block;
+	padding: 10px 10px 0px 10px;
+	cursor: pointer;
+
+	.line-1, .line-2, .line-3 {
+		width: 35px;
+		height: 5px;
+		background-color: white;
+		margin: 6px 0;
+		transition: 0.4s; 
+	}
+
+	.change.line-1 {
+		transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	.change.line-2 {
+		opacity: 0;
+	}
+
+	.change.line-3 {
+		transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+
+	#hamburger.menu-ani {
+		transition: .7;
+	}
+
+}
+
+.carousel {
+	width: 220px;
+	height: 220px;
+	background: red;
+	border-radius: 150px;
+}
+
+
+.explore-arrow {
+	color: red;
+}
+
