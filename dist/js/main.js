@@ -1,8 +1,9 @@
-"use strict";
+'use strict';
 
 console.log("Helllo from the console!");
 
 var hamburger = document.getElementById('hamburger');
+var lines = document.querySelectorAll('.lines');
 
 function hamburgerToggle() {
     lines.forEach(function (line) {
