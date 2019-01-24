@@ -67,6 +67,34 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+	font-family: 'fujibold';
+	src: url("fuji-bold-webfont.woff2") format("woff2"), url("fuji-bold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'fujilight';
+	src: url("fuji-light-webfont.woff2") format("woff2"), url("fuji-light-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'fujimedium';
+	src: url("fuji-medium-webfont.woff2") format("woff2"), url("fuji-medium-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'fujiregular';
+	src: url("fuji-regular-webfont.woff2") format("woff2"), url("fuji-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
@@ -135,8 +163,18 @@ body {
 	transition: .7;
 }
 
-.explore-arrow {
-	color: red;
+.intro-text {
+	position: absolute;
+	text-align: center;
+	left: 20%;
+	top: 20%;
+}
+
+.intro-text h1, .intro-text h2 {
+	color: #fff;
+	font-size: 15vh;
+	font-family: "fujimedium";
+	letter-spacing: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

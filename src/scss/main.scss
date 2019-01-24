@@ -15,6 +15,11 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @import 'reset';
+@import 'fonts';
+
+$fujiBold: 'fujibold';
+$fujiNorm: 'fujinormal';
+$fujiMed: 'fujimedium';
 $textcolor: #dada00;
 
 /* 1. Main Layout ================================= */
@@ -94,7 +99,18 @@ body {
 
 }
 
-.explore-arrow {
-	color: red;
+.intro-text {
+	position: absolute;
+	text-align: center;
+	left: 20%;
+	top: 20%;
+
+	h1, h2 {
+		color: #fff;
+		font-size: 15vh;
+		font-family: $fujiMed;
+		letter-spacing: 10px;
+	}
 }
+
 
