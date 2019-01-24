@@ -107,39 +107,22 @@ body {
 
 .content-home {
 	position: relative;
+	background: url("../img/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: 100%;
 	height: 100vh;
 }
 
-.content-home .video-wrap {
-	width: 100%;
-}
-
-.content-home .video-wrap .videos {
-	width: 100%;
-	position: absolute;
-	z-index: -1;
-}
-
-/* 2. Content ================================= */
-.america, .asia, .south-america {
-	color: #dada00;
-	font-size: 2.5em;
-}
-
-#header .logo-right {
-	color: white;
-	font-size: 2em;
-	float: right;
-}
-
-#hamburger {
+.content-home #header #hamburger {
 	z-index: 1;
 	display: inline-block;
 	padding: 10px 10px 0px 10px;
 	cursor: pointer;
 }
 
-#hamburger .line-1, #hamburger .line-2, #hamburger .line-3 {
+.content-home #header #hamburger .line-1, .content-home #header #hamburger .line-2, .content-home #header #hamburger .line-3 {
 	width: 35px;
 	height: 5px;
 	background-color: white;
@@ -147,34 +130,64 @@ body {
 	transition: 0.4s;
 }
 
-#hamburger .change.line-1 {
+.content-home #header #hamburger .change.line-1 {
 	transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-#hamburger .change.line-2 {
+.content-home #header #hamburger .change.line-2 {
 	opacity: 0;
 }
 
-#hamburger .change.line-3 {
+.content-home #header #hamburger .change.line-3 {
 	transform: rotate(45deg) translate(-8px, -8px);
 }
 
-#hamburger #hamburger.menu-ani {
+.content-home #header #hamburger #hamburger.menu-ani {
 	transition: .7;
 }
 
-.intro-text {
-	position: absolute;
-	text-align: center;
-	left: 20%;
-	top: 20%;
+.content-home .intro-text {
+	margin-top: 30px;
 }
 
-.intro-text h1, .intro-text h2 {
+.content-home .intro-text .border-intro-text {
+	position: relative;
+}
+
+.content-home .intro-text .border-intro-text:after {
+	content: '';
+	height: 220%;
+	width: 1px;
+	transform: rotate(90deg);
+	position: absolute;
+	right: 88px;
+	top: -16px;
+	background-color: #fff;
+}
+
+.content-home .intro-text h1 {
+	position: relative;
 	color: #fff;
-	font-size: 15vh;
+	font-family: "fujibold";
+	letter-spacing: 20px;
+	font-size: 95px;
+	text-align: center;
+}
+
+.content-home .intro-text h2 {
+	position: relative;
 	font-family: "fujimedium";
-	letter-spacing: 10px;
+	font-size: 8vh;
+	color: #e36d32;
+	text-align: center;
+	margin-top: 20px;
+	letter-spacing: 15px;
+}
+
+/* 2. Content ================================= */
+.america, .asia, .south-america {
+	color: #dada00;
+	font-size: 2.5em;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -17,6 +17,8 @@ TABLE OF CONTENTS:
 @import 'reset';
 @import 'fonts';
 
+
+$accentOrange: #e36d32;
 $fujiBold: 'fujibold';
 $fujiNorm: 'fujinormal';
 $fujiMed: 'fujimedium';
@@ -39,13 +41,85 @@ body {
 
 .content-home {
 	position: relative;
+	background: url('../img/bg.png');
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: 100%;
 	height: 100vh;
-	.video-wrap {
-		width: 100%;
-		.videos {
-			width: 100%;
+
+	#header {
+		// position: absolute;
+			#hamburger {
+				z-index: 1;
+				display: inline-block;
+				padding: 10px 10px 0px 10px;
+				cursor: pointer;
+		
+				.line-1, .line-2, .line-3 {
+					width: 35px;
+					height: 5px;
+					background-color: white;
+					margin: 6px 0;
+					transition: 0.4s; 
+				}
+		
+				.change.line-1 {
+					transform: rotate(-45deg) translate(-9px, 6px) ;
+				}
+		
+				.change.line-2 {
+					opacity: 0;
+				}
+		
+				.change.line-3 {
+					transform: rotate(45deg) translate(-8px, -8px) ;
+				}
+		
+				#hamburger.menu-ani {
+					transition: .7;
+				}
+		
+			}
+		
+		}
+
+	.intro-text {
+		margin-top: 30px;
+		.border-intro-text {
+			// border-bottom: 1px white solid
+			position: relative;
+		}
+		.border-intro-text:after {
+			content: '';
+			height: 220%;
+			width: 1px;
+			transform: rotate(90deg);
 			position: absolute;
-			z-index: -1;
+			right: 88px;
+			top: -16px;
+			background-color: #fff; 
+		  }
+	
+		h1 {
+			position: relative;
+			color: #fff;
+			font-family: $fujiBold;
+			letter-spacing: 20px;
+			font-size: 95px;
+			text-align: center;
+		}
+	
+		h2 {
+			position: relative;
+			font-family: $fujiMed;
+			font-size: 8vh;
+			color: $accentOrange;
+			text-align: center;
+			margin-top: 20px;
+			letter-spacing: 15px;
+
 		}
 	}
 }
@@ -58,59 +132,10 @@ body {
 	font-size: 2.5em;
 }
 
-#header {
 
-	.logo-right {
-		color: white;
-		font-size: 2em;
-		float: right;
-	}
-}
 
-#hamburger {
-	z-index: 1;
-	display: inline-block;
-	padding: 10px 10px 0px 10px;
-	cursor: pointer;
 
-	.line-1, .line-2, .line-3 {
-		width: 35px;
-		height: 5px;
-		background-color: white;
-		margin: 6px 0;
-		transition: 0.4s; 
-	}
 
-	.change.line-1 {
-		transform: rotate(-45deg) translate(-9px, 6px) ;
-	}
 
-	.change.line-2 {
-		opacity: 0;
-	}
-
-	.change.line-3 {
-		transform: rotate(45deg) translate(-8px, -8px) ;
-	}
-
-	#hamburger.menu-ani {
-		transition: .7;
-	}
-
-}
-
-.intro-text {
-	position: absolute;
-	text-align: center;
-	left: 20%;
-	top: 20%;
-
-	h1, h2 {
-		color: #fff;
-		font-size: 15vh;
-		font-family: $fujiMed;
-		letter-spacing: 10px;
-	}
-}
 
 
