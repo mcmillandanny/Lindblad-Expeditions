@@ -4,15 +4,8 @@ CONTENT:	Lindblad
 AUTHOR:		Danny McMillan
 ==============================================
 
-TABLE OF CONTENTS:
 
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
-/* 0. Reset ================================= */
+/* 0. Reset/Variables ================================= */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -95,7 +88,7 @@ table {
 	font-style: normal;
 }
 
-/* 1. Main Layout ================================= */
+/* Main Layout ================================= */
 * {
 	box-sizing: border-box;
 }
@@ -178,6 +171,12 @@ body {
 	transition: 0.8s;
 }
 
+@media screen and (max-width: 768px) {
+	.content-home .overlay {
+		display: none;
+	}
+}
+
 .content-home .open.overlay {
 	left: 0%;
 	transition: 0.3s;
@@ -194,6 +193,12 @@ body {
 	top: 20%;
 	left: -60%;
 	transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+	.content-home .overlay-nav {
+		display: none;
+	}
 }
 
 .content-home .overlay-nav a {
@@ -269,19 +274,50 @@ body {
 	margin-top: 30px;
 }
 
-.content-home .intro-text .border-intro-text {
+.content-home .intro-text .border-intro-text-con, .content-home .intro-text .border-intro-text-uer {
 	position: relative;
 }
 
-.content-home .intro-text .border-intro-text:after {
+.content-home .intro-text .border-intro-text-con:after {
 	content: '';
-	height: 220%;
-	width: 1px;
+	height: 200%;
+	width: 3px;
 	transform: rotate(90deg);
 	position: absolute;
-	right: 88px;
-	top: -16px;
+	right: 48%;
+	top: -15%;
 	background-color: #fff;
+	animation: slideinBorder1 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+}
+
+@keyframes slideinBorder1 {
+	0% {
+		right: 148%;
+	}
+	100% {
+		right: 48%;
+	}
+}
+
+.content-home .intro-text .border-intro-text-uer:after {
+	content: '';
+	height: 180%;
+	width: 3px;
+	transform: rotate(90deg);
+	position: absolute;
+	right: 54%;
+	top: -5%;
+	background-color: #fff;
+	animation: slideinBorder2 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+}
+
+@keyframes slideinBorder2 {
+	0% {
+		right: -66%;
+	}
+	100% {
+		right: 54%;
+	}
 }
 
 .content-home .intro-text h1 {
@@ -296,17 +332,86 @@ body {
 .content-home .intro-text h2 {
 	position: relative;
 	font-family: "fujimedium";
-	font-size: 8vh;
+	font-size: 35px;
 	color: #e36d32;
 	text-align: center;
 	margin-top: 20px;
 	letter-spacing: 15px;
 }
 
-/* 2. Content ================================= */
-.america, .asia, .south-america {
-	color: #dada00;
-	font-size: 2.5em;
+.content-home .book-now-btn {
+	color: white;
+	opacity: .6;
+	position: absolute;
+	left: 85%;
+	top: 85%;
+}
+
+.content-home .book-now-btn p {
+	cursor: pointer;
+	border: 1px solid white;
+	display: inline;
+	padding: 10px;
+	font-family: "fujimedium";
+	letter-spacing: 2px;
+}
+
+/* END OF CONTENT ================================= */
+.dest-picker {
+	background: #000000;
+	position: relative;
+}
+
+.dest-picker h2, .dest-picker p {
+	color: white;
+	font-family: "fujibold";
+	letter-spacing: 1px;
+}
+
+.dest-picker .i-want-to {
+	padding: 10px;
+	margin-bottom: -15px;
+	margin-left: 200px;
+	padding-top: 30px;
+	font-size: 25px;
+	letter-spacing: 5px;
+}
+
+.dest-picker .dest-flex-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.dest-picker .dest-flex-text .conquer-dest {
+	padding: 10px;
+	font-size: 60px;
+}
+
+.dest-picker .dest-flex-text .it-all {
+	padding: 10px;
+	font-size: 60px;
+	color: #e36d32;
+	position: relative;
+}
+
+.dest-picker .dest-flex-text .it-all:after {
+	content: '';
+	height: 280%;
+	width: 3px;
+	transform: rotate(90deg);
+	position: absolute;
+	right: 50%;
+	top: -45%;
+	background-color: #fff;
+}
+
+.dest-picker .explore-here {
+	font-size: 15px;
+	opacity: .7;
+	text-align: center;
+	padding: 10px;
+	margin-left: 280px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,16 +4,8 @@ CONTENT:	Lindblad
 AUTHOR:		Danny McMillan
 ==============================================
 
-TABLE OF CONTENTS:
 
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
-
-/* 0. Reset ================================= */
+/* 0. Reset/Variables ================================= */
 @import 'reset';
 @import 'fonts';
 
@@ -24,7 +16,12 @@ $fujiNorm: 'fujinormal';
 $fujiMed: 'fujimedium';
 $textcolor: #dada00;
 
-/* 1. Main Layout ================================= */
+
+$mobile-break: 320px;
+$tablet-break: 768px;
+$desktop-break: 1200px;
+
+/* Main Layout ================================= */
 
 * {
 	box-sizing: border-box;
@@ -49,6 +46,7 @@ body {
 	height: 100vh;
 
 	#header {
+
 
 			#hamburger {
 				z-index: 2;
@@ -114,6 +112,10 @@ body {
 			height: 420px;
 			left: -80%;
 			transition: 0.8s;
+
+			@media screen and (max-width: $tablet-break) {
+				display: none;
+			}
 		}
 		.open.overlay	 {
 			left: 0%;
@@ -132,6 +134,10 @@ body {
 		top: 20%;
 		left: -60%;
 		transition: 0.4s;
+		
+			@media screen and (max-width: $tablet-break) {
+				display: none;
+			}
 
 		a {
 			color: $accentOrange;
@@ -207,20 +213,58 @@ body {
 	.intro-text {
 		z-index: 1;
 		margin-top: 30px;
-		.border-intro-text {
-			// border-bottom: 1px white solid
+		.border-intro-text-con, .border-intro-text-uer {
 			position: relative;
 		}
-		.border-intro-text:after {
+		.border-intro-text-con:after {
 			content: '';
-			height: 220%;
-			width: 1px;
+			height: 200%;
+			width: 3px;
 			transform: rotate(90deg);
 			position: absolute;
-			right: 88px;
-			top: -16px;
+			right: 48%;
+			top: -15%;
 			background-color: #fff; 
+			animation: slideinBorder1 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+
 		  }
+
+		  @keyframes slideinBorder1 {
+			  0% {
+				right: 148%;
+				
+			  }
+
+			  100% {
+				right: 48%;
+				
+			  }
+		  }
+
+		  .border-intro-text-uer:after {
+			content: '';
+			height: 180%;
+			width: 3px;
+			transform: rotate(90deg);
+			position: absolute;
+			right: 54%;
+			top: -5%;
+			background-color: #fff; 
+			animation: slideinBorder2 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
+
+		  }
+
+		  @keyframes slideinBorder2 {
+			0% {
+			  right: -66%;
+			 
+			}
+
+			100% {
+			  right: 54%;
+			 
+			}
+		}
 	
 		h1 {
 			position: relative;
@@ -234,7 +278,7 @@ body {
 		h2 {
 			position: relative;
 			font-family: $fujiMed;
-			font-size: 8vh;
+			font-size: 35px;
 			color: $accentOrange;
 			text-align: center;
 			margin-top: 20px;
@@ -242,15 +286,88 @@ body {
 
 		}
 	}
+
+	.book-now-btn {
+		color: white;
+		opacity: .6;
+		position: absolute;
+		left: 85%;
+		top: 85%;
+		p {
+			cursor: pointer;
+			border: 1px solid white;
+			display: inline;
+			padding: 10px;
+			font-family: $fujiMed;
+			letter-spacing: 2px;
+
+		}
+	}
 }
 
-/* 2. Content ================================= */
 
+/* END OF CONTENT ================================= */
 
-.america, .asia, .south-america {
-	color: $textcolor;
-	font-size: 2.5em;
+.dest-picker {
+	background: #000000;
+	position: relative;
+	h2, p {
+		color: white;
+		font-family: $fujiBold;
+		letter-spacing: 1px;
+	}
+
+	.i-want-to {
+		padding: 10px;
+		margin-bottom: -15px;
+		margin-left: 200px;
+		padding-top: 30px;
+		font-size: 25px;
+		letter-spacing: 5px;
+	}
+
+	.dest-flex-text {
+		display: flex;
+		flex-direction: row;
+		justify-content: center; 
+		.conquer-dest {
+			padding: 10px;
+			font-size: 60px;
+		}
+	
+		.it-all {
+			padding: 10px;
+			font-size: 60px;
+			color: $accentOrange;
+			position: relative;
+		}
+
+		.it-all:after {
+			content: '';
+			height: 280%;
+			width: 3px;
+			transform: rotate(90deg);
+			position: absolute;
+			right: 50%;
+			top: -45%;
+			background-color: #fff; 
+
+		  }
+
+	}
+	.explore-here {
+		font-size: 15px;
+		opacity: .7;
+		text-align: center;
+		padding: 10px;
+		margin-left: 280px;
+	}
+
+	
 }
+
+
+
 
 
 

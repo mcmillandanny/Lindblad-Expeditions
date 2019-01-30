@@ -4,7 +4,6 @@ const hamburger = document.getElementById('hamburger');
 const lines = document.querySelectorAll('.lines');
 let overlay = document.querySelector('.overlay');
 let overlayTextNav = document.querySelector('.overlay-nav')
-console.log(overlay);
 
 function hamburgerToggle() {
     lines.forEach(function(line) {
