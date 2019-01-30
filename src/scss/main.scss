@@ -367,6 +367,63 @@ body {
 }
 
 
+///END OF DESTINATION PICKER //
+
+
+.middle-section {
+	width: 90%;
+	margin: auto;
+	margin-top: 60px;
+	padding: 20px;
+
+
+	.middle-text-blurb {
+		font-family: $fujiMed;
+		margin-bottom: 10px;
+
+		.highest-rated-trips {
+			font-size: 60px;
+			letter-spacing: 5px;
+			color: #6490a1;
+		}
+
+	}
+
+	.middle-popular-wrapper, .middle-buck, .middle-unique {
+		font-family: $fujiMed;
+
+			h3 {
+				margin-left: 40px;
+				position: relative;
+				letter-spacing: 1px;
+				font-size: 40px;
+			}
+
+			h3:after {
+			content: '';
+			height: 80%;
+			width: 4px;
+			transform: rotate(90deg);
+			position: absolute;
+			right: 102%;
+			top: 6%;
+			background-color: #000000; 
+			cursor: pointer;
+			}
+		}
+
+		.middle-popular {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+
+		
+		}
+
+}
+
+
 
 
 

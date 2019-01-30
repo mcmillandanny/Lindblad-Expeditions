@@ -414,4 +414,51 @@ body {
 	margin-left: 280px;
 }
 
+.middle-section {
+	width: 90%;
+	margin: auto;
+	margin-top: 60px;
+	padding: 20px;
+}
+
+.middle-section .middle-text-blurb {
+	font-family: "fujimedium";
+	margin-bottom: 10px;
+}
+
+.middle-section .middle-text-blurb .highest-rated-trips {
+	font-size: 60px;
+	letter-spacing: 5px;
+	color: #6490a1;
+}
+
+.middle-section .middle-popular-wrapper, .middle-section .middle-buck, .middle-section .middle-unique {
+	font-family: "fujimedium";
+}
+
+.middle-section .middle-popular-wrapper h3, .middle-section .middle-buck h3, .middle-section .middle-unique h3 {
+	margin-left: 40px;
+	position: relative;
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+
+.middle-section .middle-popular-wrapper h3:after, .middle-section .middle-buck h3:after, .middle-section .middle-unique h3:after {
+	content: '';
+	height: 80%;
+	width: 4px;
+	transform: rotate(90deg);
+	position: absolute;
+	right: 102%;
+	top: 6%;
+	background-color: #000000;
+	cursor: pointer;
+}
+
+.middle-section .middle-popular {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 /*# sourceMappingURL=main.css.map */
