@@ -40,33 +40,52 @@ body {
 
 
 .content-home {
+	z-index: 0;
 	position: relative;
 	background: url('../img/bg.png');
-
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	background-size: 100%;
 	height: 100vh;
 
 	#header {
-		// position: absolute;
+
 			#hamburger {
-				z-index: 1;
+				z-index: 2;
 				display: inline-block;
 				padding: 10px 10px 0px 10px;
 				cursor: pointer;
 		
-				.line-1, .line-2, .line-3 {
-					width: 35px;
-					height: 5px;
+				.line-1 {
+					width: 25px;
+					height: 3px;
+					border-radius: 10px;
 					background-color: white;
 					margin: 6px 0;
 					transition: 0.4s; 
 				}
+
+				.line-2 {
+					width: 35px;
+					height: 3px;
+					border-radius: 10px;
+					background-color: white;
+					margin: 6px 0;
+					transition: 0.4s;
+				}
+				
+				.line-3 {
+					width: 45px;
+					height: 3px;
+					border-radius: 10px;
+					background-color: white;
+					margin: 6px 0;
+					transition: 0.4s ease-in-out;
+				}
 		
 				.change.line-1 {
-					transform: rotate(-45deg) translate(-9px, 6px) ;
+					transform: rotate(-45deg) translate(-5px, 3px);
+					width: 45px;
 				}
 		
 				.change.line-2 {
@@ -85,7 +104,108 @@ body {
 		
 		}
 
+		.overlay {
+			z-index: 1;
+			position: absolute;
+			top: 20%;
+			background: black;
+			opacity: .7;
+			width: 600px;
+			height: 420px;
+			left: -80%;
+			transition: 0.8s;
+		}
+		.open.overlay	 {
+			left: 0%;
+			transition: 0.3s;
+		}
+		.open.overlay-nav {
+			left: 0%;
+			transition: 0.6s;
+		}
+
+
+
+	.overlay-nav {
+		z-index: 2;
+		position: absolute;
+		top: 20%;
+		left: -60%;
+		transition: 0.4s;
+
+		a {
+			color: $accentOrange;
+			font-size: 50px;
+			padding: 20px 0px 10px 60px;
+			margin-left: 100px;
+			text-align: left;
+			position: relative;
+			font-family: $fujiMed;
+			text-decoration: none;
+			display: block;
+			letter-spacing: 1.5px;
+		}
+
+		.home-nav:after {
+			content: '';
+			position: absolute;
+			height: 395%;
+			width: 1px;
+			left: 5%;
+			top: -110%;
+			background-color: #fff;
+			transform: rotate(90deg);
+		}
+
+		.Ca-nav:after {
+			content: '';
+			position: absolute;
+			height: 920%;
+			width: 1px;
+			left: 5%;
+			top: -370%;
+			background-color: #fff;
+			transform: rotate(90deg);
+		}
+
+		.exp-nav:after {
+			content: '';
+			position: absolute;
+			height: 935%;
+			width: 1px;
+			left: 5%;
+			top: -380%;
+			background-color: #fff;
+			transform: rotate(90deg);
+		}
+
+		.about-nav:after {
+			content: '';
+			position: absolute;
+			height: 420%;
+			width: 1px;
+			left: 5%;
+			top: -120%;
+			background-color: #fff;
+			transform: rotate(90deg);
+		}
+
+		.reserve-nav:after {
+			content: '';
+			position: absolute;
+			height: 815%;
+			width: 1px;
+			left: 5%;
+			top: -320%;
+			background-color: #fff;
+			transform: rotate(90deg);
+		}
+	}
+
+
+
 	.intro-text {
+		z-index: 1;
 		margin-top: 30px;
 		.border-intro-text {
 			// border-bottom: 1px white solid
