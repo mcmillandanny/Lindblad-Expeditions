@@ -15,6 +15,7 @@ $fujiBold: 'fujibold';
 $fujiNorm: 'fujinormal';
 $fujiMed: 'fujimedium';
 $textcolor: #dada00;
+$accentBlue: #6490a1;
 
 
 $mobile-break: 320px;
@@ -371,20 +372,23 @@ body {
 
 
 .middle-section {
-	width: 90%;
-	margin: auto;
+	padding: 30px;
 	margin-top: 60px;
-	padding: 20px;
+	overflow-x: hidden;
 
 
 	.middle-text-blurb {
 		font-family: $fujiMed;
 		margin-bottom: 10px;
+		
+		h2 {
+			font-size: 20px;
+		}
 
 		.highest-rated-trips {
 			font-size: 60px;
 			letter-spacing: 5px;
-			color: #6490a1;
+			color: $accentBlue;
 		}
 
 	}
@@ -392,23 +396,24 @@ body {
 	.middle-popular-wrapper, .middle-buck, .middle-unique {
 		font-family: $fujiMed;
 
-			h3 {
-				margin-left: 40px;
+			 .view-btn  {
+				margin-left: 45px;
 				position: relative;
 				letter-spacing: 1px;
 				font-size: 40px;
 			}
 
-			h3:after {
+			.view-btn:after {
 			content: '';
 			height: 80%;
-			width: 4px;
+			width: 5px;
 			transform: rotate(90deg);
 			position: absolute;
 			right: 102%;
 			top: 6%;
 			background-color: #000000; 
 			cursor: pointer;
+			
 			}
 		}
 
@@ -416,9 +421,18 @@ body {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
+			margin-left: 40px;
 
 
+			.dates-pop {
+				color: $accentBlue;
+				font-style: italic;
+			}
 		
+			p {
+				text-align: left;
+				padding-bottom: 5px;
+			}
 		}
 
 }

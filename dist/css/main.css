@@ -415,15 +415,18 @@ body {
 }
 
 .middle-section {
-	width: 90%;
-	margin: auto;
+	padding: 30px;
 	margin-top: 60px;
-	padding: 20px;
+	overflow-x: hidden;
 }
 
 .middle-section .middle-text-blurb {
 	font-family: "fujimedium";
 	margin-bottom: 10px;
+}
+
+.middle-section .middle-text-blurb h2 {
+	font-size: 20px;
 }
 
 .middle-section .middle-text-blurb .highest-rated-trips {
@@ -436,17 +439,17 @@ body {
 	font-family: "fujimedium";
 }
 
-.middle-section .middle-popular-wrapper h3, .middle-section .middle-buck h3, .middle-section .middle-unique h3 {
-	margin-left: 40px;
+.middle-section .middle-popular-wrapper .view-btn, .middle-section .middle-buck .view-btn, .middle-section .middle-unique .view-btn {
+	margin-left: 45px;
 	position: relative;
 	letter-spacing: 1px;
 	font-size: 40px;
 }
 
-.middle-section .middle-popular-wrapper h3:after, .middle-section .middle-buck h3:after, .middle-section .middle-unique h3:after {
+.middle-section .middle-popular-wrapper .view-btn:after, .middle-section .middle-buck .view-btn:after, .middle-section .middle-unique .view-btn:after {
 	content: '';
 	height: 80%;
-	width: 4px;
+	width: 5px;
 	transform: rotate(90deg);
 	position: absolute;
 	right: 102%;
@@ -459,6 +462,17 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	margin-left: 40px;
+}
+
+.middle-section .middle-popular .dates-pop {
+	color: #6490a1;
+	font-style: italic;
+}
+
+.middle-section .middle-popular p {
+	text-align: left;
+	padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

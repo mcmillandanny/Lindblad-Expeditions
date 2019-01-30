@@ -3,7 +3,7 @@ console.log("Helllo from the console!");
 const hamburger = document.getElementById('hamburger');
 const lines = document.querySelectorAll('.lines');
 let overlay = document.querySelector('.overlay');
-let overlayTextNav = document.querySelector('.overlay-nav')
+let overlayTextNav = document.querySelector('.overlay-nav');
 
 function hamburgerToggle() {
     lines.forEach(function(line) {
@@ -13,3 +13,6 @@ function hamburgerToggle() {
     });
 };
 hamburger.addEventListener("click", hamburgerToggle);
+
+
+
