@@ -336,14 +336,15 @@ body {
 			font-size: 60px;
 		}
 	
-		.it-all {
+		.text-car.showing {
 			padding: 10px;
 			font-size: 60px;
 			color: $accentOrange;
 			position: relative;
+			
 		}
 
-		.it-all:after {
+		.text-car:after {
 			content: '';
 			height: 280%;
 			width: 3px;

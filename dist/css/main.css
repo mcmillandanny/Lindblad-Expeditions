@@ -388,14 +388,14 @@ body {
 	font-size: 60px;
 }
 
-.dest-picker .dest-flex-text .it-all {
+.dest-picker .dest-flex-text .text-car.showing {
 	padding: 10px;
 	font-size: 60px;
 	color: #e36d32;
 	position: relative;
 }
 
-.dest-picker .dest-flex-text .it-all:after {
+.dest-picker .dest-flex-text .text-car:after {
 	content: '';
 	height: 280%;
 	width: 3px;

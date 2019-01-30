@@ -15,4 +15,22 @@ function hamburgerToggle() {
     });
 };
 hamburger.addEventListener("click", hamburgerToggle);
+
+var text = document.querySelectorAll('.text-car');
+
+function textCarousel() {
+    text.forEach(function (destination) {
+        // var randomNum = text[Math.floor(Math.random() * text.length)];
+        // console.log(randomNum);
+        // console.log(destination); 
+
+        if (destination.classList.contains("showing")) {
+            destination.style.display = "block";
+        } else {
+            destination.style.display = "none";
+        }
+    });
+}
+
+textCarousel();
 //# sourceMappingURL=main.js.map
