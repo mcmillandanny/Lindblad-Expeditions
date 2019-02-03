@@ -394,7 +394,7 @@ body {
 
 	}
 
-	.middle-popular-wrapper, .middle-buck, .middle-unique {
+	.middle-popular-wrapper, .middle-buck-wrapper, .middle-unique-wrapper {
 		font-family: $fujiMed;
 
 			 .view-btn  {
@@ -402,23 +402,16 @@ body {
 				position: relative;
 				letter-spacing: 1px;
 				font-size: 40px;
+
+				.dash-btn {
+					font-size: 60px;
+					cursor: pointer;
+				}
 			}
 
-			.view-btn:after {
-			content: '';
-			height: 80%;
-			width: 5px;
-			transform: rotate(90deg);
-			position: absolute;
-			right: 102%;
-			top: 6%;
-			background-color: #000000; 
-			cursor: pointer;
-			
-			}
 		}
 
-		.middle-popular {
+		.middle-popular, .middle-buck, .middle-unique {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;

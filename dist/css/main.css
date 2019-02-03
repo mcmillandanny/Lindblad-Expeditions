@@ -435,42 +435,35 @@ body {
 	color: #6490a1;
 }
 
-.middle-section .middle-popular-wrapper, .middle-section .middle-buck, .middle-section .middle-unique {
+.middle-section .middle-popular-wrapper, .middle-section .middle-buck-wrapper, .middle-section .middle-unique-wrapper {
 	font-family: "fujimedium";
 }
 
-.middle-section .middle-popular-wrapper .view-btn, .middle-section .middle-buck .view-btn, .middle-section .middle-unique .view-btn {
+.middle-section .middle-popular-wrapper .view-btn, .middle-section .middle-buck-wrapper .view-btn, .middle-section .middle-unique-wrapper .view-btn {
 	margin-left: 45px;
 	position: relative;
 	letter-spacing: 1px;
 	font-size: 40px;
 }
 
-.middle-section .middle-popular-wrapper .view-btn:after, .middle-section .middle-buck .view-btn:after, .middle-section .middle-unique .view-btn:after {
-	content: '';
-	height: 80%;
-	width: 5px;
-	transform: rotate(90deg);
-	position: absolute;
-	right: 102%;
-	top: 6%;
-	background-color: #000000;
+.middle-section .middle-popular-wrapper .view-btn .dash-btn, .middle-section .middle-buck-wrapper .view-btn .dash-btn, .middle-section .middle-unique-wrapper .view-btn .dash-btn {
+	font-size: 60px;
 	cursor: pointer;
 }
 
-.middle-section .middle-popular {
+.middle-section .middle-popular, .middle-section .middle-buck, .middle-section .middle-unique {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	margin-left: 40px;
 }
 
-.middle-section .middle-popular .dates-pop {
+.middle-section .middle-popular .dates-pop, .middle-section .middle-buck .dates-pop, .middle-section .middle-unique .dates-pop {
 	color: #6490a1;
 	font-style: italic;
 }
 
-.middle-section .middle-popular p {
+.middle-section .middle-popular p, .middle-section .middle-buck p, .middle-section .middle-unique p {
 	text-align: left;
 	padding-bottom: 5px;
 }
