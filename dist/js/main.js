@@ -18,19 +18,15 @@ hamburger.addEventListener("click", hamburgerToggle);
 
 var text = document.querySelectorAll('.text-car');
 
-function textCarousel() {
-    text.forEach(function (destination) {
-        // var randomNum = text[Math.floor(Math.random() * text.length)];
-        // console.log(randomNum);
-        // console.log(destination); 
+var currentTextIndex = 0;
 
-        if (destination.classList.contains("showing")) {
-            destination.style.display = "block";
-        } else {
-            destination.style.display = "none";
-        }
-    });
-}
+setInterval(function () {
 
-textCarousel();
+    // find .showing
+    // hide the one that's currently .showing
+
+    // currentTextIndex++
+    // add .showing to text[currentTextIndex] 
+
+}, 5000);
 //# sourceMappingURL=main.js.map

@@ -390,22 +390,32 @@ body {
 	font-size: 60px;
 }
 
-.dest-picker .dest-flex-text .text-car.showing {
-	padding: 10px;
-	font-size: 60px;
-	color: #e36d32;
+.dest-picker .dest-flex-text .rotating-text-cars {
 	position: relative;
+	width: 326px;
+	border-bottom: 3px solid white;
 }
 
-.dest-picker .dest-flex-text .text-car:after {
-	content: '';
-	height: 280%;
-	width: 3px;
-	transform: rotate(90deg);
+.dest-picker .dest-flex-text .rotating-text-cars .text-car {
 	position: absolute;
-	right: 50%;
-	top: -45%;
-	background-color: #fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	padding: 10px 10px 0 10px;
+	font-size: 60px;
+	color: #e36d32;
+	display: none;
+	text-align: center;
+	line-height: 60px;
+}
+
+.dest-picker .dest-flex-text .rotating-text-cars .text-car.showing {
+	display: block;
+}
+
+.dest-picker .dest-flex-text .rotating-text-cars .text-car.text-car-small {
+	font-size: 34px;
 }
 
 .dest-picker .explore-here {

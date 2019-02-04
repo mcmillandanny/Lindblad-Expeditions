@@ -17,27 +17,18 @@ hamburger.addEventListener("click", hamburgerToggle);
 
 let text = document.querySelectorAll('.text-car');
 
+let currentTextIndex = 0;
 
+setInterval(() => {
 
-function textCarousel() {
-    text.forEach(function(destination) {
-        // var randomNum = text[Math.floor(Math.random() * text.length)];
-        // console.log(randomNum);
-        // console.log(destination); 
-        
-        if (destination.classList.contains("showing")) {
-            destination.style.display = "block";
-
-        } else {
-            destination.style.display = "none";
-
-        }
-        
-    });
+    // find .showing
+    // hide the one that's currently .showing
     
-}
+    // currentTextIndex++
+    // add .showing to text[currentTextIndex] 
 
-textCarousel();
+}, 5000)
+
 
 
 
