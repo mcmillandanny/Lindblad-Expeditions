@@ -96,6 +96,8 @@ table {
 body {
 	background: white;
 	font-family: Arial, Helvetica, sans-serif;
+	max-width: 1400px;
+	margin: auto;
 }
 
 .content-home {
@@ -466,6 +468,46 @@ body {
 .middle-section .middle-popular p, .middle-section .middle-buck p, .middle-section .middle-unique p {
 	text-align: left;
 	padding-bottom: 5px;
+}
+
+.bottom-section {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	position: relative;
+}
+
+.bottom-section .header-bottom {
+	font-size: 40px;
+	font-family: "fujibold";
+	letter-spacing: 1px;
+}
+
+.bottom-section aside .dolphin-img {
+	width: 600px;
+}
+
+.bottom-section .why-lindblad-wrapper {
+	z-index: 1;
+	margin-top: 100px;
+	width: 100%;
+	background: #e36d32;
+	z-index: 1;
+	font-family: "fujimedium";
+	padding: 60px;
+	text-align: justify;
+	max-height: 200px;
+	transform: translateX(40px);
+}
+
+.bottom-section .why-lindblad-wrapper .learn-more-link {
+	float: right;
+	text-decoration: none;
+}
+
+footer {
+	background: black;
+	color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

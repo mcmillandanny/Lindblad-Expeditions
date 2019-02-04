@@ -32,6 +32,8 @@ $desktop-break: 1200px;
 body {
 	background: white;
 	font-family: Arial, Helvetica, sans-serif;
+	max-width: 1400px;
+	margin: auto;
 }
 
 
@@ -430,6 +432,56 @@ body {
 		}
 
 }
+
+
+.bottom-section {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	position: relative;
+
+	.header-bottom {
+		font-size: 40px;
+		font-family: $fujiBold;
+		letter-spacing: 1px;
+	}
+	
+
+	aside {
+		.dolphin-img {
+			width: 600px;
+
+		}
+	
+	}
+	
+	.why-lindblad-wrapper {
+		z-index: 1;
+		margin-top: 100px;
+		width: 100%;
+		background: $accentOrange;
+		z-index: 1;
+		font-family: $fujiMed;
+		padding: 60px;
+		text-align: justify;
+		max-height: 200px;
+		transform: translateX(40px);
+
+		.learn-more-link {
+			float: right;
+			text-decoration: none;
+		}
+
+
+	}
+}
+
+footer {
+	background: black;
+	color: white;
+}
+
+
 
 
 
