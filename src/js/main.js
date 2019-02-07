@@ -31,7 +31,7 @@ let text = document.querySelectorAll('.text-car');
 let currentTextIndex = 0;
 
 setInterval(() => {
-    animateTextInOut();
+    // animateTextInOut();
 
     let hideShowingText = function() {
         let activeText = document.querySelector('.showing');

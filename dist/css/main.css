@@ -311,7 +311,7 @@ body {
 	}
 }
 
-h1 {
+.content-home h1 {
 	position: relative;
 	color: #fff;
 	font-family: "fujibold";
@@ -320,7 +320,7 @@ h1 {
 	text-align: center;
 }
 
-h2 {
+.content-home h2 {
 	position: relative;
 	font-family: "fujimedium";
 	font-size: 35px;
@@ -330,7 +330,7 @@ h2 {
 	letter-spacing: 15px;
 }
 
-.book-now-btn {
+.content-home .book-now-btn {
 	color: white;
 	opacity: .6;
 	position: absolute;
@@ -338,7 +338,7 @@ h2 {
 	top: 85%;
 }
 
-.book-now-btn p {
+.content-home .book-now-btn p {
 	cursor: pointer;
 	border: 1px solid white;
 	display: inline;
