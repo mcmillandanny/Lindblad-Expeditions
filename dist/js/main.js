@@ -29,7 +29,7 @@ var text = document.querySelectorAll('.text-car');
 var currentTextIndex = 0;
 
 setInterval(function () {
-    animateTextInOut();
+    // animateTextInOut();
 
     var hideShowingText = function hideShowingText() {
         var activeText = document.querySelector('.showing');
