@@ -110,6 +110,12 @@ body {
 	height: 100vh;
 }
 
+@media screen and (min-width: 1200px) {
+	.content-home {
+		background-size: center;
+	}
+}
+
 .content-home #header #hamburger {
 	z-index: 2;
 	display: inline-block;
@@ -516,8 +522,13 @@ body {
 }
 
 footer {
+	font-family: "fujimedium";
 	background: black;
 	color: white;
+	display: flex;
+	flex-direction: row;
+	padding: 50px;
+	justify-content: space-around;
 }
 
 /*# sourceMappingURL=main.css.map */
