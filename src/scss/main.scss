@@ -20,7 +20,7 @@ $accentBlue: #6490a1;
 
 $mobile-break: 320px;
 $tablet-break: 768px;
-$desktop-break: 1200px;
+$desktop-break: 1180px;
 
 /* Main Layout ================================= */
 
@@ -34,6 +34,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	max-width: 1400px;
 	margin: auto;
+	overflow-x: hidden;
 }
 
 
@@ -48,14 +49,10 @@ body {
 	width: 100%;
 	height: 100vh;
 	
-		@media screen and (min-width: $desktop-break) {
-			background-size: center;
-			
-		}
 
 	#header {
 
-
+	
 			#hamburger {
 				z-index: 2;
 				display: inline-block;
@@ -121,9 +118,6 @@ body {
 			left: -80%;
 			transition: 0.8s;
 
-			@media screen and (max-width: $tablet-break) {
-				display: none;
-			}
 		}
 		.open.overlay	 {
 			left: 0%;
@@ -143,9 +137,6 @@ body {
 		left: -60%;
 		transition: 0.4s;
 		
-			@media screen and (max-width: $tablet-break) {
-				display: none;
-			}
 
 		a {
 			color: $accentOrange;
@@ -158,6 +149,7 @@ body {
 			text-decoration: none;
 			display: block;
 			letter-spacing: 1.5px;
+		
 		}
 
 		.home-nav:after {
@@ -169,6 +161,7 @@ body {
 			top: -110%;
 			background-color: #fff;
 			transform: rotate(90deg);
+
 		}
 
 		.Ca-nav:after {
@@ -180,6 +173,7 @@ body {
 			top: -370%;
 			background-color: #fff;
 			transform: rotate(90deg);
+			
 		}
 
 		.exp-nav:after {
@@ -191,6 +185,7 @@ body {
 			top: -380%;
 			background-color: #fff;
 			transform: rotate(90deg);
+		
 		}
 
 		.about-nav:after {
@@ -202,6 +197,7 @@ body {
 			top: -120%;
 			background-color: #fff;
 			transform: rotate(90deg);
+		
 		}
 
 		.reserve-nav:after {
@@ -213,12 +209,15 @@ body {
 			top: -320%;
 			background-color: #fff;
 			transform: rotate(90deg);
+		
 		}
 	}
 
 
 
 	.intro-text {
+
+		
 		z-index: 1;
 		margin-top: 30px;
 		.border-intro-text-con, .border-intro-text-uer {
@@ -236,6 +235,10 @@ body {
 			animation: slideinBorder1 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
 
 		  }
+		 	  
+	}
+
+		  
 
 		  @keyframes slideinBorder1 {
 			  0% {
@@ -262,6 +265,9 @@ body {
 
 		  }
 
+			
+		}
+
 		  @keyframes slideinBorder2 {
 			0% {
 			  right: -66%;
@@ -281,6 +287,7 @@ body {
 			letter-spacing: 20px;
 			font-size: 95px;
 			text-align: center;
+
 		}
 	
 		h2 {
@@ -291,9 +298,7 @@ body {
 			text-align: center;
 			margin-top: 20px;
 			letter-spacing: 15px;
-
-		}
-	}
+			}
 
 	.book-now-btn {
 		color: white;
@@ -310,8 +315,9 @@ body {
 			letter-spacing: 2px;
 
 		}
+
 	}
-}
+
 
 
 /* END OF CONTENT ================================= */
@@ -332,15 +338,19 @@ body {
 		padding-top: 30px;
 		font-size: 25px;
 		letter-spacing: 5px;
+	
 	}
 
 	.dest-flex-text {
 		display: flex;
 		flex-direction: row;
 		justify-content: center; 
+
+	
 		.conquer-dest {
 			padding: 10px;
 			font-size: 60px;
+		
 		}
 
 		.rotating-text-cars {
@@ -348,7 +358,9 @@ body {
 			position: relative;
 			width: 326px;
 			border-bottom: 3px solid white;
-	
+
+
+		
 			.text-car {
 				position: absolute;
 				top: 0;
@@ -361,8 +373,10 @@ body {
 				display: none;
 				text-align: center;
 				line-height: 60px;
+				
 				&.showing {
 					display: block;
+					
 				}
 				&.text-car-small {
 					font-size: 34px;
@@ -390,6 +404,7 @@ body {
 		text-align: center;
 		padding: 10px;
 		margin-left: 280px;
+	
 	}
 
 	
@@ -417,18 +432,21 @@ body {
 			font-size: 60px;
 			letter-spacing: 5px;
 			color: $accentBlue;
+		
 		}
 
 	}
 
 	.middle-popular-wrapper, .middle-buck-wrapper, .middle-unique-wrapper {
 		font-family: $fujiMed;
+	
 
 			 .view-btn  {
 				margin-left: 45px;
 				position: relative;
 				letter-spacing: 1px;
 				font-size: 40px;
+			
 
 				.dash-btn {
 					font-size: 60px;
@@ -442,8 +460,11 @@ body {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
-			margin-left: 40px;
-
+			margin-left: 40px;	 
+		
+		}	
+			
+		
 
 			.dates-pop {
 				color: $accentBlue;
@@ -456,7 +477,7 @@ body {
 			}
 		}
 
-}
+
 
 
 .bottom-section {
@@ -465,16 +486,19 @@ body {
 	flex-direction: row;
 	position: relative;
 
+
 	.header-bottom {
 		font-size: 40px;
 		font-family: $fujiBold;
 		letter-spacing: 1px;
+	
 	}
 	
 
 	aside {
 		.dolphin-img {
 			width: 600px;
+		
 
 		}
 	
@@ -491,6 +515,7 @@ body {
 		text-align: justify;
 		max-height: 200px;
 		transform: translateX(40px);
+	
 
 		.learn-more-link {
 			float: right;
